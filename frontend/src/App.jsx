@@ -17,7 +17,7 @@ function App() {
 
   // --- API CALLS ---
   const fetchProblems = () => {
-    fetch('http://localhost:5000/api/problems')
+	  fetch('https://cp-pluse-backend.onrender.com/api/problems')
       .then((res) => res.json())
       .then((data) => setProblems(data))
       .catch((err) => console.error("Fetch error:", err));
